@@ -1,0 +1,174 @@
+# dune ut
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/rohan/Downloads/Stevens/CS496/PLaF/src/hw3_stub
+# Auto-detected concurrency: 12
+$ /home/rohan/.opam/4.14.0/bin/ocamlc.opt -config > /tmp/dune_2f5c5c_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/home/rohan/.opam/4.14.0/lib/toplevel"
+#  ; ocaml_bin = External "/home/rohan/.opam/4.14.0/bin"
+#  ; ocaml = Ok External "/home/rohan/.opam/4.14.0/bin/ocaml"
+#  ; ocamlc = External "/home/rohan/.opam/4.14.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/rohan/.opam/4.14.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/rohan/.opam/4.14.0/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/rohan/.opam/4.14.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/rohan/.opam/4.14.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/home/rohan/.opam/4.14.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/home/rohan/Downloads/Stevens/CS496/PLaF/src/hw3_stub"
+#        ; "INSIDE_DUNE" :
+#            "/home/rohan/Downloads/Stevens/CS496/PLaF/src/hw3_stub/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/rohan/Downloads/Stevens/CS496/PLaF/src/hw3_stub/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/rohan/Downloads/Stevens/CS496/PLaF/src/hw3_stub/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/rohan/Downloads/Stevens/CS496/PLaF/src/hw3_stub/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/home/rohan/.opam/4.14.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.0"
+#      ; standard_library_default = "/home/rohan/.opam/4.14.0/lib/ocaml"
+#      ; standard_library = "/home/rohan/.opam/4.14.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /home/rohan/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/interp.ml) > _build/default/lib/.proc.objs/interp.ml.d
+$ (cd _build/default && /home/rohan/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I lib/.proc.objs/byte -I /home/rohan/.opam/4.14.0/lib/menhirLib -I /home/rohan/.opam/4.14.0/lib/parser_plaf -no-alias-deps -opaque -open Proc -o lib/.proc.objs/byte/proc__Interp.cmo -c -impl lib/interp.ml)
+> File "lib/interp.ml", lines 86-88, characters 4-36:
+> 86 | ....(match n with
+> 87 |     |[] -> return @@ BoolVal true
+> 88 |     |[_] -> return @@ BoolVal false)
+> Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+> Here is an example of a case that is not matched:
+> _::_::_
+> File "lib/interp.ml", line 66, characters 10-14:
+> 66 |   | Record(fs) ->
+>                ^^^^
+> Warning 27 [unused-var-strict]: unused variable fs.
+> File "lib/interp.ml", line 68, characters 9-10:
+> 68 |   | Proj(e,id) ->
+>               ^
+> Warning 27 [unused-var-strict]: unused variable e.
+> File "lib/interp.ml", line 68, characters 11-13:
+> 68 |   | Proj(e,id) ->
+>                 ^^
+> Warning 27 [unused-var-strict]: unused variable id.
+> File "lib/interp.ml", line 93, characters 9-11:
+> 93 |   | Node(e1,lte,rte) ->
+>               ^^
+> Warning 27 [unused-var-strict]: unused variable e1.
+> File "lib/interp.ml", line 93, characters 12-15:
+> 93 |   | Node(e1,lte,rte) ->
+>                  ^^^
+> Warning 27 [unused-var-strict]: unused variable lte.
+> File "lib/interp.ml", line 93, characters 16-19:
+> 93 |   | Node(e1,lte,rte) ->
+>                      ^^^
+> Warning 27 [unused-var-strict]: unused variable rte.
+> File "lib/interp.ml", line 95, characters 10-16:
+> 95 |   | CaseT(target,emptycase,id1,id2,id3,nodecase) ->
+>                ^^^^^^
+> Warning 27 [unused-var-strict]: unused variable target.
+> File "lib/interp.ml", line 95, characters 17-26:
+> 95 |   | CaseT(target,emptycase,id1,id2,id3,nodecase) ->
+>                       ^^^^^^^^^
+> Warning 27 [unused-var-strict]: unused variable emptycase.
+> File "lib/interp.ml", line 95, characters 27-30:
+> 95 |   | CaseT(target,emptycase,id1,id2,id3,nodecase) ->
+>                                 ^^^
+> Warning 27 [unused-var-strict]: unused variable id1.
+> File "lib/interp.ml", line 95, characters 31-34:
+> 95 |   | CaseT(target,emptycase,id1,id2,id3,nodecase) ->
+>                                     ^^^
+> Warning 27 [unused-var-strict]: unused variable id2.
+> File "lib/interp.ml", line 95, characters 35-38:
+> 95 |   | CaseT(target,emptycase,id1,id2,id3,nodecase) ->
+>                                         ^^^
+> Warning 27 [unused-var-strict]: unused variable id3.
+> File "lib/interp.ml", line 95, characters 39-47:
+> 95 |   | CaseT(target,emptycase,id1,id2,id3,nodecase) ->
+>                                             ^^^^^^^^
+> Warning 27 [unused-var-strict]: unused variable nodecase.
+$ (cd _build/default && /home/rohan/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o lib/proc.cma lib/.proc.objs/byte/proc.cmo lib/.proc.objs/byte/proc__Ds.cmo lib/.proc.objs/byte/proc__Interp.cmo lib/.proc.objs/byte/proc__Ast.cmo)
+$ (cd _build/default && /home/rohan/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -bin-annot -I lib/.utop/.utop.eobjs/byte -I /home/rohan/.opam/4.14.0/lib/findlib -I /home/rohan/.opam/4.14.0/lib/lambda-term -I /home/rohan/.opam/4.14.0/lib/logs -I /home/rohan/.opam/4.14.0/lib/lwt -I /home/rohan/.opam/4.14.0/lib/lwt/unix -I /home/rohan/.opam/4.14.0/lib/lwt_react -I /home/rohan/.opam/4.14.0/lib/menhirLib -I /home/rohan/.opam/4.14.0/lib/mew -I /home/rohan/.opam/4.14.0/lib/mew_vi -I /home/rohan/.opam/4.14.0/lib/ocaml/compiler-libs -I /home/rohan/.opam/4.14.0/lib/ocaml/threads -I /home/rohan/.opam/4.14.0/lib/ocplib-endian -I /home/rohan/.opam/4.14.0/lib/ocplib-endian/bigstring -I /home/rohan/.opam/4.14.0/lib/parser_plaf -I /home/rohan/.opam/4.14.0/lib/react -I /home/rohan/.opam/4.14.0/lib/result -I /home/rohan/.opam/4.14.0/lib/trie -I /home/rohan/.opam/4.14.0/lib/uchar -I /home/rohan/.opam/4.14.0/lib/utop -I /home/rohan/.opam/4.14.0/lib/uucp -I /home/rohan/.opam/4.14.0/lib/uuseg -I /home/rohan/.opam/4.14.0/lib/uutf -I /home/rohan/.opam/4.14.0/lib/zed -I lib/.proc.objs/byte -no-alias-deps -o lib/.utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl lib/.utop/utop.ml-gen)
+$ (cd _build/default && /home/rohan/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o lib/.utop/utop.exe -output-complete-exe /home/rohan/.opam/4.14.0/lib/ocaml/compiler-libs/ocamlcommon.cma /home/rohan/.opam/4.14.0/lib/ocaml/compiler-libs/ocamlbytecomp.cma /home/rohan/.opam/4.14.0/lib/ocaml/compiler-libs/ocamltoplevel.cma /home/rohan/.opam/4.14.0/lib/findlib/findlib.cma /home/rohan/.opam/4.14.0/lib/findlib/findlib_top.cma /home/rohan/.opam/4.14.0/lib/logs/logs.cma -I /home/rohan/.opam/4.14.0/lib/ocaml /home/rohan/.opam/4.14.0/lib/lwt/lwt.cma /home/rohan/.opam/4.14.0/lib/logs/logs_lwt.cma /home/rohan/.opam/4.14.0/lib/ocaml/unix.cma -I /home/rohan/.opam/4.14.0/lib/ocaml /home/rohan/.opam/4.14.0/lib/ocaml/bigarray.cma -I /home/rohan/.opam/4.14.0/lib/ocaml /home/rohan/.opam/4.14.0/lib/ocplib-endian/ocplib_endian.cma /home/rohan/.opam/4.14.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /home/rohan/.opam/4.14.0/lib/ocaml/threads/threads.cma -I /home/rohan/.opam/4.14.0/lib/ocaml /home/rohan/.opam/4.14.0/lib/lwt/unix/lwt_unix.cma -I /home/rohan/.opam/4.14.0/lib/lwt/unix /home/rohan/.opam/4.14.0/lib/react/react.cma /home/rohan/.opam/4.14.0/lib/lwt_react/lwt_react.cma /home/rohan/.opam/4.14.0/lib/result/result.cma /home/rohan/.opam/4.14.0/lib/uutf/uutf.cma /home/rohan/.opam/4.14.0/lib/uucp/uucp.cma /home/rohan/.opam/4.14.0/lib/uuseg/uuseg.cma /home/rohan/.opam/4.14.0/lib/zed/zed.cma /home/rohan/.opam/4.14.0/lib/trie/trie.cma /home/rohan/.opam/4.14.0/lib/mew/mew.cma /home/rohan/.opam/4.14.0/lib/mew_vi/mew_vi.cma /home/rohan/.opam/4.14.0/lib/lambda-term/lambda_term.cma -I /home/rohan/.opam/4.14.0/lib/lambda-term /home/rohan/.opam/4.14.0/lib/utop/uTop.cma /home/rohan/.opam/4.14.0/lib/menhirLib/menhirLib.cma /home/rohan/.opam/4.14.0/lib/parser_plaf/parser_plaf.cma lib/proc.cma lib/.utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
